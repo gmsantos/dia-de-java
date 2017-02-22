@@ -1,0 +1,10 @@
+version: "3"
+
+services: 
+    tomcat:
+        image: tomcat:jre8-alpine
+        ports:
+            - "8080:8080"
+            - "9009:8009"
+        volumes: 
+            - ./target/servlet-sample-1.0-SNAPSHOT:/usr/local/tomcat/webapps/servlet-sample
