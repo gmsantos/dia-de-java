@@ -10,8 +10,28 @@
     <servlet-class>br.ufscar.servlet.HelloWorldServlet</servlet-class>
   </servlet>
 
+  <servlet>
+    <servlet-name>Inscricao</servlet-name>
+    <servlet-class>br.ufscar.servlet.Inscricao</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>Minicurso</servlet-name>
+    <servlet-class>br.ufscar.servlet.Minicurso</servlet-class>
+  </servlet>
+
   <servlet-mapping>
     <servlet-name>HelloWorld</servlet-name>
     <url-pattern>/HelloWorld</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>Inscricao</servlet-name>
+    <url-pattern>/inscricao</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>Minicurso</servlet-name>
+    <url-pattern>/minicurso</url-pattern>
   </servlet-mapping>
 </web-app>
