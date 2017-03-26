@@ -20,18 +20,28 @@
     <servlet-class>br.ufscar.servlet.Minicurso</servlet-class>
   </servlet>
 
+  <servlet>
+    <servlet-name>InscricaoJsp</servlet-name>
+    <jsp-file>/jsp/inscricao.jsp</jsp-file>
+  </servlet>
+
+  <servlet>
+    <servlet-name>MinicursoJsp</servlet-name>
+    <jsp-file>/jsp/minicurso.jsp</jsp-file>
+  </servlet>
+
   <servlet-mapping>
     <servlet-name>HelloWorld</servlet-name>
     <url-pattern>/HelloWorld</url-pattern>
   </servlet-mapping>
 
   <servlet-mapping>
-    <servlet-name>Inscricao</servlet-name>
+    <servlet-name>InscricaoJsp</servlet-name>
     <url-pattern>/inscricao</url-pattern>
   </servlet-mapping>
 
   <servlet-mapping>
-    <servlet-name>Minicurso</servlet-name>
+    <servlet-name>MinicursoJsp</servlet-name>
     <url-pattern>/minicurso</url-pattern>
   </servlet-mapping>
 </web-app>
