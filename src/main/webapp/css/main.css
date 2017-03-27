@@ -352,3 +352,7 @@ nav a.active {
         page-break-after: avoid;
     }
 }
+
+table, th, td {
+   border: 1px solid black;
+}

@@ -6,11 +6,6 @@
   <display-name>Servlet Sample</display-name>
 
   <servlet>
-    <servlet-name>HelloWorld</servlet-name>
-    <servlet-class>br.ufscar.servlet.HelloWorldServlet</servlet-class>
-  </servlet>
-
-  <servlet>
     <servlet-name>Inscricao</servlet-name>
     <servlet-class>br.ufscar.servlet.Inscricao</servlet-class>
   </servlet>
@@ -18,6 +13,11 @@
   <servlet>
     <servlet-name>Minicurso</servlet-name>
     <servlet-class>br.ufscar.servlet.Minicurso</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>EmitirCertificado</servlet-name>
+    <servlet-class>br.ufscar.servlet.EmitirCertificado</servlet-class>
   </servlet>
 
   <servlet>
@@ -30,10 +30,16 @@
     <jsp-file>/jsp/minicurso.jsp</jsp-file>
   </servlet>
 
-  <servlet-mapping>
-    <servlet-name>HelloWorld</servlet-name>
-    <url-pattern>/HelloWorld</url-pattern>
-  </servlet-mapping>
+  <servlet>
+    <servlet-name>Certificado</servlet-name>
+    <jsp-file>/jsp/certificado.jsp</jsp-file>
+  </servlet>
+
+  <servlet>
+    <servlet-name>PresencaJsp</servlet-name>
+    <jsp-file>/jsp/presenca.jsp</jsp-file>
+  </servlet>
+
 
   <servlet-mapping>
     <servlet-name>InscricaoJsp</servlet-name>
@@ -43,5 +49,20 @@
   <servlet-mapping>
     <servlet-name>MinicursoJsp</servlet-name>
     <url-pattern>/minicurso</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>Certificado</servlet-name>
+    <url-pattern>/certificado</url-pattern>
+  </servlet-mapping>
+    
+  <servlet-mapping>
+    <servlet-name>EmitirCertificado</servlet-name>
+    <url-pattern>/emitirCertificado</url-pattern>
+  </servlet-mapping>
+      
+  <servlet-mapping>
+    <servlet-name>PresencaJsp</servlet-name>
+    <url-pattern>/presenca</url-pattern>
   </servlet-mapping>
 </web-app>
